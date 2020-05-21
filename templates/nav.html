@@ -1,0 +1,36 @@
+<div class="container" style="margin-left: 100px ;width: 70%"> <!--容器-->
+    <div class="row clearfix"><!--行-->
+        <div class="col-md-12 column"><!--列-->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <!--导航 反色 固定顶部-->
+                <div class="navbar-header"> <!--标题-->
+
+                    <h3>个人博客</h3>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!--折叠-->
+                    <ul class="nav navbar-nav"> <!--导航列表-->
+                        <li class="active"> <!--激活的列表项-->
+                            <a href="/">首页</a>
+                        </li>
+                        <li class="dropdown">
+                            <p class="dropdown-toggle" data-toggle="dropdown">分类<strong
+                                    class="caret"></strong></p>
+                            <ul class="dropdown-menu"><!--下拉菜单项-->
+                                <li>
+                                    <a href="{% url 'category' 2%}">Django</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'category' 3%}">Python</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right " style="padding-right: 20px"><!--导航右侧-->
+                        <li class="active">
+                            <a href="/admin">登录管理</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
